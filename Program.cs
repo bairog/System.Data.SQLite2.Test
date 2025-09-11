@@ -12,6 +12,15 @@ namespace System.Data.SQLite2.Test
             using (var comand = conn.CreateCommand())
             {
                 conn.Open();
+                try
+                {
+                    conn.EnableExtensions(true);
+                    conn.LoadExtension("e_sqlite3.dll", "sqlite3_fts5_init");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"sqlite3_fts5_init load failed: {ex}");
+                }
                 comand.CommandText = "SELECT NameValue from Products";
                 using (var reader = comand.ExecuteReader())
                     while (reader.Read())
