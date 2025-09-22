@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net8.0;net472</TargetFrameworks>
-    <LangVersion>latest</LangVersion>
+    <TargetFramework>net472</TargetFramework>
+    <RuntimeIdentifer>win-x64</RuntimeIdentifer>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="SourceGear.sqlite3.ext" Version="3.50.4.2" />
-    <PackageReference Include="System.Data.SQLite" Version="2.0.1" />
+    <PackageReference Include="System.Data.SQLite" Version="2.0.2" />
   </ItemGroup>
 
 </Project>
