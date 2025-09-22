@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net472</TargetFramework>
     <RuntimeIdentifer>win-x64</RuntimeIdentifer>
+    <!--<PlatformTarget>x64</PlatformTarget>-->
   </PropertyGroup>
 
   <ItemGroup>
